@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnicas de conmutación y multiplexación</title>
+    <link rel="stylesheet" href="css/tecnicas_de_conmutacion_y_multiplexacion.css">
+</head>
+
+<body>
+    <header>
+        <h1>4. Tecnicas de conmutación y multiplexación</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="equipo.html">Equipo</a>
+    </nav>
+    <div class="container">
+
+        <div class="grid">
+            <div class="card">
+                <h3>4.1 Conmutación</h3>
+                <div class="content">
+                    <div class="text">
+                        <p>
+                            En las redes de comunicaciones, la conmutación se considera como la acción de establecer una
+                            vía, un camino, de extremo a extremo entre dos puntos, un emisor (Tx) y un receptor (Rx) a
+                            través de nodos o equipos de transmisión. La conmutación permite la entrega de la señal
+                            desde el
+                            origen hasta el destino requerido. <br><br>
+                            Un conmutador de red conecta a los usuarios, las aplicaciones y los equipos en una red para
+                            que puedan comunicarse entre sí y compartir recursos. Los conmutadores de red más simples
+                            ofrecen conectividad exclusivamente a los dispositivos en una única red de área local (LAN).
+                            Los
+                            conmutadores más avanzados pueden conectar dispositivos de múltiples LAN e incluso pueden
+                            incorporar
+                            funciones básicas de seguridad de datos.
+                        </p>
+                        <a href="https://www.ecured.cu/Conmutaci%C3%B3n_%28Redes_de_comunicaci%C3%B3n%29">Leer más...</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/Conmutacion.jpg" alt="Diagrama de conmutación">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>4.1.1 Conmutación de Circuitos (Red Telefonica publica)</h3>
+                <img src="img/Ccircuitos.jpg" alt="">
+                <p>
+                    Se denomina Conmutación de circuitos (Circuit Switching en inglés) al establecimiento, por parte
+                    de una red de comunicaciones, de una vía dedicada exclusiva y temporalmente (o “circuito”) a la
+                    transmisión de
+                    extremo a extremo entre dos puntos, un emisor y un receptor.<br><br>
+                    En la conmutación de circuitos, se busca y define una vía extremo-a-extremo con un ancho de
+                    banda fijo específico durante toda de la sesión. La red recibe desde el extremo emisor, una
+                    dirección que
+                    identifica al extremo destinatario y establece un “camino” hacia dicho destino. Cuando finaliza
+                    la sesión, la
+                    vía se libera y puede ser utilizada por un nuevo circuito.
+                </p>
+                <a href="https://es.simbase.com/iot-glossary-dictionary/circuit-switching"> Leer más...</a>
+            </div>
+            <div class="card">
+                <h3>4.1.2 Conmutación de Paquetes (X.25, Frame Relay)</h3>
+                <img src="img/Cpaquetes.webp" alt="">
+                <p>
+                    Se denomina Conmutación de Paquetes (Packet Switching en inglés) al establecimiento, por parte
+                    de una red
+                    de comunicaciones, de un intercambio de bloques de información (o “paquetes”) con un tamaño
+                    específico entre
+                    dos puntos, un emisor y un receptor. En el origen, extremo emisor, la información se divide en
+                    “paquetes” a
+                    los cuales se les indica la dirección del destinatario. Esto es, cada paquete contiene, además
+                    de datos, un
+                    encabezado con información de control (prioridad y direcciones de origen y destino).<br><br>
+                    Los paquetes se transmiten a través de la red y, posteriormente, son reensamblados en el destino
+                    obteniendo así
+                    el mensaje original. Las redes basadas en la conmutación de paquetes evitan que mensajes de gran
+                    longitud
+                    signifiquen grandes intervalos de espera ya que limitan el tamaño de los mensajes transmitidos.
+                </p>
+                <a href="https://www.sapalomera.cat/moodlecf/RS/4/course/module2/2.1.2.5/2.1.2.5.html"> Leer más...</a>
+            </div>
+            <div class="card">
+                <h3>4.1.3 Entramado: Store and Forward</h3>
+                <img src="img/medios_de_transmision.png" alt="">
+                <p>
+                    Store and Forward o almacenamiento y retransmisión
+                    es una técnica empeadaen telecomunicaciones en la que la información se envía a una
+                    estaciónintermedia,
+                    donde se mantiene y se envía en un momento posterior a su destinofinal o a otra estación
+                    intermedia.<br><br>
+                    La estación intermedia, o nodo en una red contexto, verifica la integridad delmensaje antes de
+                    enviarlo.
+                    En general, esta técnica se utiliza en redes conconectividad intermitente, especialmente en el
+                    desierto o
+                    entornos que requierenuna alta movilidad. También puede ser preferible en situaciones en las que
+                    haylargos
+                    retrasos en la transmisión y las tasas de error variable y alta, o si unadirecta, de extremo a
+                    extremo de
+                    conexión no está disponible.
+                </p>
+                <a href="https://fundamentos-telecomunicacion-itiz.blogspot.com/2015/05/43-store-and-forward.html"> Leer más...</a>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>4.1.4 Celdas: ATM</h3>
+                <img src="img/atm.jpg" alt="">
+                <p>
+                    Es capaz de trasferir voz, vídeo y datos a través de redes privadas y públicas.Tiene una
+                    arquitectura
+                    basada en celdas, en lugar de tramas. Las celdas ATMtienen siempre una longitud fija de 53
+                    bytes. La celda ATM contiene unencabezado ATM de 5 bytes seguido de 48 bytes de contenido ATM.
+                    Las celdaspequeñas de longitud fija son adecuadas para la trasmisión de tráfico de voz yde vídeo
+                    porque
+                    este tráfico no tolera demoras. El tráfico de vídeo y voz no tieneque esperar a que se trasmita
+                    un paquete
+                    de datos más grande.<br><br>
+                    La celda ATM de 53 bytes es menos eficiente que las tramas y paquetes másgrandes de Frame Relay
+                    y X.25.
+                    Además, la celda ATM tiene una carga general depor lo menos 5 bytes por cada 48 bytes de
+                    contenido. Cuando la celda estátrasportando paquetes de capa de red segmentados, la carga
+                    general
+                    es mayorporque es Switch ATM tiene que poder reagrupar los paquetes en el destino.
+                </p>
+                <a href="https://www.studocu.com/es-mx/document/universidad-salesiana/fundamentos-de-telecomunicaciones/celdas-atm/12802863">Leer más...</a>
+            </div>
+            <div class="card">
+                <h3>4.2 Multiplexación</h3>
+                <img src="img/multiplexacion.gif" alt="">
+                <p>
+                    Las facilidades de transmisión son caras y, a menudo, dos equipos terminales de datos que se
+                    comunican
+                    por cables coaxiales, enlaces por microondas, o satélite, no utilizan la capacidad total del canal,
+                    desperdiciando parte de la anchura de banda disponible. Este problema se soluciona mediante unos
+                    equipos
+                    denominados multiplexores, que reparten el uso del medio de transmisión en varios canales
+                    independientes
+                    que permiten accesos simultáneos a los usuarios, siendo totalmente transparente a los datos
+                    transmitidos.
+                </p>
+                <a href="https://www.extron.es/article/mavsfosta">Leer más...</a>
+            </div>
+            <div class="card">
+                <h3>4.2.1 TDN División de tiempo</h3>
+                <img src="img/tdm.webp" alt="">
+                <p>
+                    La multiplexación por división de tiempo (MDT) o (TDM), del inglés Time Division Multiplexing, es el
+                    tipo
+                    de multiplexación más utilizado en la actualidad, especialmente en los sistemas de transmisión
+                    digitales.
+                    En ella, el ancho de banda total del medio de transmisión es asignado a cada canal durante una
+                    fracción
+                    del tiempo total (intervalo de tiempo).
+                </p>
+                <a href="https://phoenixnap.mx/glosario/multiplexaci%C3%B3n-por-divisi%C3%B3n-de-tiempo">Leer más...</a>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>4.2.2 FDM División de frecuencia</h3>
+                <img src="img/fdmm.png" alt="">
+                <p>
+                    La multiplexación por división de frecuencia (MDF) o (FDM), del inglés Frequency Division
+                    Multiplexing, es
+                    un tipo de multiplexación utilizada generalmente en sistemas de transmisión analógicos. La forma de
+                    funcionamiento es la siguiente: se convierte cada fuente de varias que originalmente ocupaban el
+                    mismo
+                    espectro de frecuencias, a una banda distinta de frecuencias, y se transmite en forma simultánea por
+                    un
+                    solo medio de transmisión. Así se pueden transmitir muchos canales de banda relativamente angosta
+                    por un
+                    solo sistema de transmisión de banda ancha.<br><br>
+                    El FDM es un esquema análogo de multiplexado; la información que entra a un sistema FDM es analógica
+                    y
+                    permanece analógica durante toda su transmisión.
+                </p>
+                <a href="https://www.techtarget.com/searchnetworking/definition/frequency-division-multiplexing">Leer más...</a>
+            </div>
+            <div class="card">
+                <h3>4.2.3 WDM División de longitud de onda</h3>
+                <img src="img/wdm.jpg" alt="">
+                <p>
+                    En telecomunicación, la multiplexación por división de longitud de onda (WDM, del inglés Wavelength
+                    Division Multiplexing) es una tecnología que multiplexa varias señales sobre una sola fibra óptica
+                    mediante portadoras ópticas de diferente longitud de onda, usando luz procedente de un láser o un
+                    LED.<br><br>
+                    Este término se refiere a una portadora óptica (descrita típicamente por su longitud de onda)
+                    mientras que la multiplexación por división de frecuencia generalmente se emplea para referirse a
+                    una
+                    portadora de radiofrecuencia (descrita habitualmente por su frecuencia).
+                </p>
+                <a href="https://www.ciena.es/insights/what-is/What-Is-WDM_es_LA.html#:~:text=La%20multiplexaci%C3%B3n%20por%20divisi%C3%B3n%20de,a%20trav%C3%A9s%20del%20mismo%20medio.">Leer mas...</a>
+            </div>
+            <div class="card">
+                <h3>4.2.4 CDM División de código</h3>
+                <img src="img/cdm.jpeg" alt="">
+                <p>
+                    La multiplexación por división de código, acceso múltiple por división de código o CDMA
+                    (del inglés Code Division Multiple Access) es un término genérico para varios métodos de
+                    multiplexación o control de acceso al medio basados en la tecnología de espectro expandido.<br><br>
+                    Se aplica el nombre «multiplexado» para los casos en que un sólo dispositivo determina el
+                    reparto del canal entre distintas comunicaciones, como por ejemplo un concentrador situado al
+                    extremo de un cable de fibra óptica; para los terminales de los usuarios finales, el multiplexado
+                    es transparente.
+                </p>
+                <a href="https://telecomunicaciones-itiguala.blogspot.com/2018/11/54-cmd-division-de-codigo.html">Leer mas...</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

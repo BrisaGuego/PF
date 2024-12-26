@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<h3>4.Técnicas de conmutación y multiplexación</h3>
+<h3>4.1Conmutación</h3>
+<p>
+En las redes de comunicaciones, la conmutación se considera como la acción de establecer una vía, 
+un camino, de extremo a extremo entre dos puntos, un emisor (Tx) y un receptor (Rx) a través de 
+nodos o equipos de transmisión. La conmutación permite la entrega de la señal desde el origen hasta 
+el destino requerido.<br><br>
+Un conmutador de red conecta a los usuarios, las aplicaciones y los equipos en una red para que puedan 
+comunicarse entre sí y compartir recursos. Los conmutadores de red más simples ofrecen conectividad 
+exclusivamente a los dispositivos en una única red de área local (LAN). Los conmutadores más avanzados 
+pueden conectar dispositivos de múltiples LAN e incluso pueden incorporar funciones básicas de seguridad 
+de datos.<br><br>
+En los conmutadores más avanzados, funciones que van más allá de la interconexión LAN simple suelen ser un 
+subconjunto de las que se encuentran normalmente en otros dispositivos de red, como los enrutadores y firewalls. 
+A pesar de las capacidades avanzadas de estos conmutadores, se les sigue llamando "conmutadores", dado que su 
+proósito principal es conectar dispositivos entre sí como parte de una red de TI. 
+</p><br>
+<img src="Conmutacion.jpg" alt="Conmutación">
+<h3>4.1.1Conmutación de circuitos (Red telefónica pública)</h3>
+<p>
+Se denomina Conmutación de circuitos (Circuit Switching en inglés) al establecimiento, por parte de una red de 
+comunicaciones, de una vía dedicada exclusiva y temporalmente (o “circuito”) a la transmisión de extremo a 
+extremo entre dos puntos, un emisor y un receptor.<br><br>
+En la conmutación de circuitos, se busca y define una vía extremo-a-extremo con un ancho de banda fijo 
+específico durante toda de la sesión. La red recibe desde el extremo emisor, una dirección que identifica al 
+extremo destinatario y establece un “camino” hacia dicho destino. Cuando finaliza la sesión, la vía se libera y 
+puede ser utilizada por un nuevo circuito.<br><br>
+Su ventaja principal radica en que una vez establecido el circuito su disponibilidad es muy alta, puesto que se 
+garantiza este camino entre ambos extremos independientemente del flujo de información. Su principal inconveniente 
+reside en consumir muchos recursos del sistema mientras dura la comunicación, independientemente de lo que en 
+la realidad pudiera requerir.
+</p><br>
+<img src="Ccircuitos.jpg" alt="Conmutación de circuitos">
+<h3>4.1.2Conmutación de Paquetes (X.25, Frame Relay)</h3>
+<p>
+Se denomina Conmutación de Paquetes (Packet Switching en inglés) al establecimiento, por parte de una red 
+de comunicaciones, de un intercambio de bloques de información (o “paquetes”) con un tamaño específico entre 
+dos puntos, un emisor y un receptor. En el origen, extremo emisor, la información se divide en “paquetes” a 
+los cuales se les indica la dirección del destinatario. Esto es, cada paquete contiene, además de datos, un 
+encabezado con información de control (prioridad y direcciones de origen y destino).<br><br>
+Los paquetes se transmiten a través de la red y, posteriormente, son reensamblados en el destino obteniendo así 
+el mensaje original. Las redes basadas en la conmutación de paquetes evitan que mensajes de gran longitud 
+signifiquen grandes intervalos de espera ya que limitan el tamaño de los mensajes transmitidos. La red puede 
+transmitir mensajes de longitud variable pero con una longitud máxima.
+</p><br>
+<img src=".webp" alt="Conmutación de paquetes">
+<h3>4.1.3Entramado: Store and Forward</h3>
+<p>
+Store and Forward o almacenamiento y retransmisión
+es una técnica empeadaen telecomunicaciones en la que la información se envía a una estaciónintermedia, 
+donde se mantiene y se envía en un momento posterior a su destinofinal o a otra estación intermedia.<br><br>
+La estación intermedia, o nodo en una red contexto, verifica la integridad delmensaje antes de enviarlo. 
+En general, esta técnica se utiliza en redes conconectividad intermitente, especialmente en el desierto o 
+entornos que requierenuna alta movilidad. También puede ser preferible en situaciones en las que haylargos 
+retrasos en la transmisión y las tasas de error variable y alta, o si unadirecta, de extremo a extremo de 
+conexión no está disponible.
+</p><br>
+<img src="Store.jpg" alt="Store and Forward">
+<h3>4.1.4Celdas: ATM</h3>
+<p>
+Es capaz de trasferir voz, vídeo y datos a través de  redes privadas y públicas.Tiene una arquitectura 
+basada en celdas, en lugar de tramas. Las celdas ATMtienen   siempre   una   longitud   fija   de   53 
+bytes.   La   celda   ATM   contiene   unencabezado ATM de 5 bytes seguido de 48 bytes de contenido ATM. 
+Las celdaspequeñas de longitud fija son adecuadas para la trasmisión de tráfico de voz yde vídeo porque 
+este tráfico no tolera demoras. El tráfico de vídeo y voz no tieneque esperar a que se trasmita un paquete 
+de datos más grande.<br><br>
+La celda ATM de 53 bytes es menos eficiente que las tramas y paquetes másgrandes de Frame Relay y X.25. 
+Además, la celda ATM tiene una carga general depor  lo   menos   5   bytes  por   cada  48   bytes   de 
+contenido.  Cuando  la   celda   estátrasportando paquetes de capa de red segmentados, la carga general 
+es mayorporque es Switch ATM tiene que poder reagrupar los paquetes en el destino. Unalínea ATM típica 
+necesita casi un 20 por ciento más de ancho de banda que FrameRelay para trasportar el mismo volumen de 
+datos de capa de red.
+</p><br>
+<img src="atm.jpg" alt="Celdas ATM">
+<h3>4.2Multiplexación</h3>
+<p>
+Las facilidades de transmisión son caras y, a menudo, dos equipos terminales de datos que se comunican 
+por cables coaxiales, enlaces por microondas, o satélite, no utilizan la capacidad total del canal, 
+desperdiciando parte de la anchura de banda disponible. Este problema se soluciona mediante unos equipos 
+denominados multiplexores, que reparten el uso del medio de transmisión en varios canales independientes 
+que permiten accesos simultáneos a los usuarios, siendo totalmente transparente a los datos transmitidos.<br><br>
+En un extremo, los multiplexores son equipos que reciben varias secuencias de datos de baja velocidad 
+y las transforman en una única secuencia de datos de alta velocidad, que se transmiten hacia un lugar 
+remoto. En dicho lugar, otro multiplexor realiza la operación inversa obteniendo de nuevo los flujos 
+de datos de baja velocidad originales. A esta función se la denomina demultiplexar.
+</p><br>
+<img src="multiplexacion.gif" alt="multiplexación">
+<h3>4.2.1TDM división de tiempo</h3>
+<p>
+La multiplexación por división de tiempo (MDT) o (TDM), del inglés Time Division Multiplexing, es el tipo 
+de multiplexación más utilizado en la actualidad, especialmente en los sistemas de transmisión digitales. 
+En ella, el ancho de banda total del medio de transmisión es asignado a cada canal durante una fracción 
+del tiempo total (intervalo de tiempo).
+</p><br>
+<img src="tdm.webp" alt="TDM">
+<h3>4.2.2FDM división de frecuencia</h3>
+<p>
+La multiplexación por división de frecuencia (MDF) o (FDM), del inglés Frequency Division Multiplexing, es 
+un tipo de multiplexación utilizada generalmente en sistemas de transmisión analógicos. La forma de 
+funcionamiento es la siguiente: se convierte cada fuente de varias que originalmente ocupaban el mismo 
+espectro de frecuencias, a una banda distinta de frecuencias, y se transmite en forma simultánea por un 
+solo medio de transmisión. Así se pueden transmitir muchos canales de banda relativamente angosta por un 
+solo sistema de transmisión de banda ancha.<br><br>
+El FDM es un esquema análogo de multiplexado; la información que entra a un sistema FDM es analógica y 
+permanece analógica durante toda su transmisión.
+</p><br>
+<img src="fdmm.png" alt="FDM">
+<h3>4.2.3WDM división de longitud de onda</h3>
+<p>
+En telecomunicación, la multiplexación por división de longitud de onda (WDM, del inglés Wavelength 
+Division Multiplexing) es una tecnología que multiplexa varias señales sobre una sola fibra óptica 
+mediante portadoras ópticas de diferente longitud de onda, usando luz procedente de un láser o un LED.<br><br>
+Este término se refiere a una portadora óptica (descrita típicamente por su longitud de onda) 
+mientras que la multiplexación por división de frecuencia generalmente se emplea para referirse a una 
+portadora de radiofrecuencia (descrita habitualmente por su frecuencia). 
+</p><br>
+<img src="wdm.jpg" alt="WDM">
+<h3>4.2.4CDM división de código</h3>
+<p>
+La multiplexación por división de código, acceso múltiple por división de código o CDMA 
+(del inglés Code Division Multiple Access) es un término genérico para varios métodos de 
+multiplexación o control de acceso al medio basados en la tecnología de espectro expandido.<br><br>
+Se aplica el nombre «multiplexado» para los casos en que un sólo dispositivo determina el 
+reparto del canal entre distintas comunicaciones, como por ejemplo un concentrador situado al 
+extremo de un cable de fibra óptica; para los terminales de los usuarios finales, el multiplexado 
+es transparente.
+</p><br>
+<img src="cdm.jpeg" alt="CDM">
+<h3>5.Modelos y dispositivos de comunicación</h3>
+<h3>5.1Introducción al modelo de referencia OSI</h3>
+<p>
+Durante los años 60 y 70 se crearon muchas tecnologías de redes, cada una basada en un diseño 
+específico de hardware. Estos sistemas eran construidos de una sola pieza, una arquitectura 
+monolítica.<br><br>
+Los dispositivos físicos de conexión,  los protocolos del software y hardware usados en la comunicación. 
+Los programas  de aplicación realizan la comunicación y la interfaz hombre-máquina que permite al humano 
+utilizar la red. Este modelo, que considera la cadena como un todo monolítico, es poco práctico, pues el 
+más pequeño cambio puede implicar alterar todos sus elementos.
+El diseño original de Internet del Departamento de Defensa Americano disponía un esquema de cuatro capas, 
+aunque data de los 70 es similar al que se continúa utilizando:<br><br>
+Capa Física o de Acceso de Red: Es la responsable del envío de la información sobre el sistema 
+hardware utilizado en cada caso, se utiliza un protocolo distinto según el tipo de red física.<br><br>
+Capa de Red o Capa Internet: Es la encargada de enviar los datos a través de las distintas redes 
+físicas que pueden conectar una máquina origen con la de destino de la información.  Los protocolos de 
+transmisión, como el IP están íntimamente asociados a esta capa.<br><br>
+Capa de Transporte : Controla el establecimiento y fin de la conexión, control de flujo de datos, 
+retransmisión de datos perdidos y otros detalles de la transmisión entre dos sistemas.  Los protocolos más 
+importantes a este nivel son TCP y UDP (mutuamente excluyentes).<br><br>
+Capa de Aplicación: Conformada por los protocolos que sirven directamente a los programas de usuario, 
+navegador, e-mail, FTP,TELNET etc.
+</p><br>
+<img src="osi.webp" alt="OSI">
+<h3>5.2Protocolos y estándares</h3>
+<p>
+En el campo de las telecomunicaciones, un protocolo de comunicaciones es el conjunto de reglas normalizadas 
+para la representación, señalización, autenticación y detección de errores necesario para enviar información a 
+través de un canal de comunicación. Un ejemplo de un protocolo de comunicaciones simple adaptado a la comunicación 
+por voz es el caso de un locutor de radio hablando a sus radioyentes.<br><br>
+Los protocolos de comunicación para la comunicación digital por redes de computadoras tienen características 
+destinadas a asegurar un intercambio de datos fiable a través de un canal de comunicación imperfecto.<br>
+Función De Un Protocolo<br>
+Cuando se realiza un intercambio de datos entre computadores, terminales y/u otros dispositivos se requieren 
+las siguientes tareas: (similitud de conversación entre un profesor y un alumno)
+1. El sistema fuente de información debe activar el camino directo de datos o bien proporcionar a la red de 
+comunicación la identificación del sistema destino deseado. 
+2. El sistema fuente debe asegurarse de que el destino está preparado para recibir los datos. 
+3. La aplicación de transferencia de fichero en el origen debe asegurarse de que el programa gestor en el 
+destino esta preparado para aceptar y almacenar el fichero para el usuario determinado
+4. Si los formatos de los ficheros son incompatibles uno de los sistemas deberá realizar una operación de 
+adecuación.<br><br>
+Los protocolos pueden ser:<br>
+Directo. Los datos e información de control pasan directamente entre las entidades sin intervención 
+de un agente activo.<br><br>
+Indirecto. Las dos entidades no se pueden comunicar directamente sino a través de una red conmutada 
+o de una interconexión de redes.<br><br>
+Monolítico. El protocolo no está estructurado en capas. El paquete debe incluir toda la lógica del protocolo.<br><br>
+Estructurado. El protocolo posee una estructura jerárquica, en capas. Entidades de nivel inferior ofrecen servicio a 
+entidades de nivel superior. A todo el conjunto de hardware y software, se le denomina arquitectura.<br><br>
+Simétrico. La comunicación se realiza entre unidades paritarias.<br><br>
+Asimétrico. Las entidades que se conectan no son paritarias. Por ejemplo un proceso “cliente” y otro 
+“servidor”, o para simplificar al máximo la lógica de una de las dos entidades, de forma que una asuma 
+la operación (Por ejemplo en HDCL).<br><br>
+Estándares. El protocolo es extensivo a todas las fuentes y receptores de información.<br><br>
+No estándares. Protocolo particular. Se utiliza para situaciones de comunicación muy específicas.<br><br>
+Estándares<br>
+Utiliza la línea eléctrica (220V o 110V) para transmitir señales de control entre equipos de automatización 
+del hogar en formato digital. El problema es que este protocolo ha tenido que ser desestimado y ahora se 
+utiliza el EIB.pl para la transmisión por la red eléctrica. Los dispositivos X10 que se comercializan son 
+solo para uso individual y es complicado el enlazarlos para crear un autentico proyecto domótico.<br><br>
+KNX/EIB: Bus de Instalación Europeo con más de 20 años y más de 100 fabricantes de productos compatibles entre sí.<br><br>
+ZigBee: Es el nombre de la especificación de un conjunto de protocolos de alto nivel de comunicación 
+inalámbrica para su utilización con radiodifusión digital de bajo consumo, basada en el estándar IEEE<br> 
+802.15.4 de redes inalámbricas de área personal (wireless personal área network, WPAN).<br> 
+Su objetivo son las aplicaciones que requieren comunicaciones seguras con baja tasa de envío de datos y 
+maximización de la vida útil de sus baterías. Protocolo estándar, recogido en el IEEE 802.15.4, de 
+comunicaciones inalámbrico.<br><br>
+OSGi: Open Services Gateway Initiative. Especificaciones abiertas de software que permita diseñar 
+plataformas compatibles que puedan proporcionar múltiples servicios.<br><br>
+LonWorks:Plataforma estandarizada para el control de edificios, viviendas, industria y transporte.<br><br>
+Universal Plug and Play (UPnP): Arquitectura software abierta y distribuida que permite el intercambio de 
+información y datos a los dispositivos conectados a una red.
+</p><br>
+<img src="PyE.png" alt="Protocolos y estándares">
+<h3>5.3Características funcionales de los dispositivos</h3>
+<p>
+El propósito principal de los medios de comunicación es, precisamente, comunicar, pero según su tipo de ideología 
+pueden especializarse en; informar, educar, transmitir, entretener, formar opinión, enseñar, controlar, etc.<br><br>
+Positivas. Las características positivas de los medios de comunicación residen en que posibilitan que 
+amplios contenidos de información lleguen a extendidos lugares del planeta en forma inmediata. Los medios 
+de comunicación, de igual manera, hacen posible que muchas relaciones personales se mantengan unidas o, 
+por lo menos, no desaparezcan por completo. Otro factor positivo se da en el ámbito económico: quien posea 
+el uso de los medios puede generar un determinado tipo de consciencia sobre una especie de producto, es decir, 
+puede generar su propia demanda, ya que los medios muchas veces cumplen la función de formadores de opinión.<br><br>
+Entonces, visto desde el ámbito empresarial, es un aspecto ampliamente positivo al hacer posible el marketing y 
+anuncios para el mundo.
+Negativas. Las características negativas recaen en la manipulación de la información y el uso de la 
+misma para intereses propios de un grupo específico.
+</p><br>
+<img src="caracteriasticas.png" alt="Características funcionales">
+<h3>5.4Estándares de interfaces</h3>
+<p>
+En telecomunicaciones y hardware, una interfaz es el puerto (circuito físico) a través del que 
+se envían o reciben señales desde un sistema o subsistemas hacia otros. No existe una interfaz 
+universal, sino que existen diferentes estándares (Interfaz USB, interfaz SCSI, etc.) que establecen 
+especificaciones técnicas concretas (características comunes), con lo que la interconexión sólo es 
+posible utilizando la misma interfaz en origen y destino. 
+Así también, una interfaz puede ser definida como un intérprete de condiciones externas al sistema, 
+a través de transductores y otros dispositivos, que permite una comunicación con actores externos, 
+como personas u otros sistemas, a través de un protocolo común a ambos. Una interfaz es una Conexión 
+física y funcional entre dos aparatos o sistemas independientes.<br><br>
+Los dispositivos de E/S se comunican por interrupciones con el procesador, si una interrupción es 
+recibida, el procesador la atenderá con la rutina de interrupción correspondiente a dicha interrupción.
+</p><br>
+<img src="estandares.png" alt="Estandares">
+<h3>5.5Mecanismos de detección y corrección de errores</h3>
+<p>
+La corrección de errores es más difícil que la detección. En la detección sólo se quiere determinar si 
+ha ocurrido un error, existiendo dos posibles respuestas: sí o no. La corrección como tal es sencilla, 
+consiste tan solo en invertir los valores de los bits erróneos; sin embargo, es necesario previamente 
+determinar la cantidad de bits erróneos, y aún más importante la ubicación de los mismos dentro de la 
+unidad de datos.<br><br>
+La corrección de errores se puede conseguir de dos formas. En la primera, cuando se descubre un 
+error, el receptor puede pedir al emisor que retransmita toda la unidad de datos (BEC, Backwards 
+Error Correction). Con la segunda, el receptor puede usar un código corrector de errores, que 
+corrija automáticamente determinados errores (FEC, Forward Error Correction).<br><br>
+Tipos de errores<br><br>
+Error de Bit
+Este término significa que únicamente un bit de una unidad de datos determinada (byte, carácter, paquete, etc.) 
+cambia de 0 a 1 o de 1 a 0 [1][2]. Para comprender el impacto de este cambio, podemos imaginar que cada grupo 
+de 8 bits es un carácter ASCII con un 0 añadido a la izquierda. Un error de bit podría alterar completamente 
+el carácter ASCII enviado (ej. ‘A’: ASCII 65) y en el receptor se obtendría un carácter completamente diferente 
+(ej. ‘I’: ASCII 73).<br><br>
+Error de Ráfaga
+Significa que dos o más bits de la unidad de datos han sido alterados. Es importante notar que los errores 
+de ráfaga no implican que se afecten bits consecutivos. La longitud de la ráfaga se mide desde el primer 
+hasta el último bit incorrecto.<br><br>
+Redundancia
+Una vez que se conocen los tipos de errores que pueden existir, es necesario identificarlos. En un 
+entorno de comunicación de datos no se tendrá una copia de los datos originales que permita comparar 
+los datos recibidos para detectar si hubo errores en la transmisión. En este caso, no habrá forma de 
+detectar si ocurrió un error hasta que se haya decodificado la transmisión y se vea que no tienen sentido 
+los datos recibidos.
+</p><br> 
+<img src="errores.png" alt="detección">
+</body>
+</html>
